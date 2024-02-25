@@ -26,7 +26,7 @@ Logging In
     Input Text    //input[@id='email']    ${user}
     Input Password    //input[@id='password']    ${pass}
 
-see the welcome page to book dates after click continue button
+See the welcome page to book dates after clicking the Continue button
     Click Button    //button[@id='login']
     Wait Until Element Is Visible    //label[@id='welcomePhrase']
 
@@ -63,7 +63,7 @@ Go to my page and check the order
     [Documentation]    click my page and check the function on my page
     [Tags]   VG_test check the order
     Set Selenium Speed    1
-    see the welcome page to book dates after click continue button
+    See the welcome page to book dates after clicking the Continue button
     Click Button    //button[@id='mypage']
     Wait Until Page Contains Element    //h1[@id='historyText']
     Wait Until Element Is Visible    //td[@id='order1']
@@ -74,7 +74,7 @@ check the show history function
     Set Selenium Speed    1
     Opening The Webpage
     Logging In    ${username}    ${password}
-    see the welcome page to book dates after click continue button
+    See the welcome page to book dates after clicking the Continue button
     Click Button    //button[@id='mypage']
 
 click the history button

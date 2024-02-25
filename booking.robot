@@ -8,6 +8,7 @@ Library    DateTime
 Log in and book your dates
     [Documentation]    login and book dates for trip
     [Tags]    VG_test login and book dates
+    Set Selenium Speed    1
     Open Browser    browser=chrome
     Go To    https://rental16.infotiv.net/
     Input Text    //input[@id='email']    jeevielangovan@gmail.com
@@ -32,7 +33,7 @@ choosing a car for rental with valid credentials
     Input Text    //input[@id='cvc']    434
     Click Button    //button[@id='confirm']
 
-After confirm Booking should show my page button
+After Confirm Booking it Should Show the My Page Button
     Wait Until Page Contains Element    //h1[@id='questionTextSmall']
     Click Button    //button[@id='mypage']
 

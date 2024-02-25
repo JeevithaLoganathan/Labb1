@@ -8,11 +8,11 @@ Resource    booking.robot
 *** Test Cases ***
 
 Choosing the car for rental
-    [Documentation]    select car and confirm booking for the trip
+    [Documentation]    select a car and confirm booking for the trip
     [Tags]    choose the car for rental VG_test
 
     Given choosing a car for rental with valid credentials
-    When After Confirm Booking Should Show My Page Button
+    When After Confirm Booking it Should Show the My Page Button
     Then See The History Page
 
 Test valid login credentials
@@ -21,7 +21,7 @@ Test valid login credentials
 
     Given Opening The Webpage
     When Logging In    ${username}    ${password}
-    Then see the welcome page to book dates after click continue button
+    Then See the welcome page to book dates after clicking the Continue button
 
 Test invalid login
     [Documentation]    test with invalid username and password it should not be login
@@ -37,7 +37,7 @@ Book valid dates
 
     Given Opening The Webpage
     When Logging In   ${username}    ${password}
-    Then see the welcome page to book dates after click continue button
+    Then See the welcome page to book dates after clicking the Continue button
     And Book Your Dates    ${start}    ${end}
 
 User cannot book a car without login
@@ -55,7 +55,7 @@ Check the my page function
     When Logging In   ${username}    ${password}
     Then Go to my page and check the order
 
-check if press the hide history button function
+check the hide history button function
     [Documentation]    check the hide history button
     [Tags]    press the hide history button VG_Test
     Given check the show history function
