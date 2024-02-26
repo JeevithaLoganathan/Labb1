@@ -7,7 +7,7 @@ Resource    booking.robot
 
 *** Test Cases ***
 
-Choosing the car for rental
+Confirm booking for a rental car
     [Documentation]    select a car and confirm booking for the trip
     [Tags]    choose the car for rental VG_test
 
